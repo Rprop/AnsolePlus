@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/* Copyright 2007, The Android Open Source Project
+** Copyright 2011 Steven Luo
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#22888888"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="12dp"
+    android:paddingEnd="6dp">
+
+    <TextView
+        android:id="@+id/memo_list_script"
+        android:paddingTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@id/memo_list_delete"
+        android:maxLines="5"
+        android:minHeight="40dp"
+        android:layout_marginEnd="12dp"
+        android:textSize="13sp"
+        android:textColor="@android:color/white"  />
+
+    <TextView
+        android:id="@+id/memo_list_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/memo_list_script"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/memo_list_delete"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="12dp"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:textColor="#555555" />
+
+    <ImageButton
+        android:id="@+id/memo_list_delete"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/close_background"
+        android:padding="6dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/btn_close_window" />
+
+    <ImageButton
+        android:id="@+id/memo_list_copy"
+        android:layout_below="@+id/memo_list_delete"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/close_background"
+        android:padding="6dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/btn_copy" />
+
+</RelativeLayout>
